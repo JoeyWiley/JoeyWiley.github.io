@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Guess my Number!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="inputBox">
+    <div id="inputCenteredBox">
+      <p id="mainTitle">I've generated a number between 1 and 999.</p>
+      <div id="inputArea">
+        <input type="text" id="textInput" class="inputItems" maxlength="3" onpaste="return false;" ondrop="return false;" autocomplete="off" onkeypress='validate(event)' onkeyup="keyUp(event)" onkeydown="keyDown(event)">
+        <input type="submit" id="submitInput" class="inputItems" value="Guess" onclick="check()">
+      </div>
+    </div>
+  </div>
+
+  <div id="feedbackBox">
+    <p id="outputText"></p>
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+
+</html>
